@@ -9,6 +9,7 @@
   "author": "Aldo Ziflaj",
   "license": "None",
   "dependencies": {
-    "express": "~4.13.1"
+    "express": "~4.13.1",
+    "monk": "~1.0.1"
   }
 }
