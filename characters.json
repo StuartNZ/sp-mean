@@ -1,0 +1,4 @@
+{ "_id" : { "$oid" : "55bb1c2d497ec9bccf0a4350" }, "name" : "Luke", "surname" : "Skywalker", "side" : "Light", "weapon" : "Lightsaber" }
+{ "_id" : { "$oid" : "55bb1c40497ec9bccf0a4351" }, "name" : "Yoda", "side" : "Light", "weapon" : "Lightsaber" }
+{ "_id" : { "$oid" : "55bb1c4e497ec9bccf0a4352" }, "sith_name" : "Vader", "side" : "Dark", "weapon" : "Lightsaber" }
+{ "_id" : { "$oid" : "55bb1c5c497ec9bccf0a4353" }, "sith_name" : "Sidious", "side" : "Dark", "weapon" : "Force lightning" }
