@@ -18,6 +18,16 @@ app.get('/character', function (req, res) {
     });
 });
 
+app.get('/jedi', function (req, res) {
+    swChars.find({side: "Light"}, function (err, docs) {
+        if (err == null) {
+            res.json(docs);
+        } else {
+            console.log(err);
+        }
+    });
+});
+
 app.listen(3000, function () {
     console.log("Server ready. Listening on port 3000");
 });
