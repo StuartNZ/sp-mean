@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body ng-app="starwars">
+
+<div ng-controller="MainCtrl as m">
+    <ul>
+        <li ng-repeat="item in m.charList">
+            <span ng-if="item.side === 'Light'">
+                {{item.name}} {{item.surname}} uses {{item.weapon}}
+            </span>
+
+            <span ng-if="item.side === 'Dark'">
+                Darth {{item.sith_name}} uses {{item.weapon}}
+            </span>
+        </li>
+    </ul>
+</div>
+
+<!-- JS SCRIPTS BELOW -->
+<!-- dependencies -->
+<script src="libs/angular/angular.min.js"></script>
+
+<!-- my scripts -->
+<script src="assets/js/ngapp.js"></script>
+<script src="assets/js/controllers/MainCtrl.js"></script>
+<script src="assets/js/services/StarWarsFactory.js"></script>
+</body>
+</html>

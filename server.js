@@ -4,8 +4,10 @@ var express = require('express'),
 
 var swChars = monk('localhost:27017/starwars').get('character');
 
+app.use('/', express.static(__dirname + '/'));
+
 app.get('/', function (req, res) {
-    res.send("Hello from Express");
+    res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 app.get('/character', function (req, res) {

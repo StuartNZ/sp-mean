@@ -1,16 +1,16 @@
 {
   "name": "sp-mean",
   "version": "0.1.0",
+  "authors": [
+    "Aldo Ziflaj <aldoziflaj95@gmail.com>"
+  ],
   "description": "An introduction to MEANstack for SitePoint",
   "main": "server.js",
-  "scripts": {
-    "start": "node ./server"
-  },
-  "author": "Aldo Ziflaj",
+  "keywords": [
+    "MEAN"
+  ],
   "license": "None",
   "dependencies": {
-    "express": "~4.13.1",
-    "monk": "~1.0.1",
-    "bower": "~1.4.1"
+    "angular": "1.4.3"
   }
 }
